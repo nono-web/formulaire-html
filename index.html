@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <h1 class="h1-contact">Formulaire de Contact</h1>
+
+    <form class="contact-form">
+      <div class="form-content">
+        <label for="name" class="label-contact">Nom et Prenom :</label>
+        <input
+          class="input-contact"
+          type="text"
+          id="name"
+          nanme="name"
+          placeholder="Nom et Prenom"
+        />
+
+        <label for="email" class="label-contact">Adresse mail :</label>
+        <input
+          class="input-contact"
+          type="email"
+          id="email"
+          nanme="email"
+          placeholder="exemple@gmail.com"
+        />
+
+        <label for="phone" class="label-contact">N° Téléphone :</label>
+        <input
+          class="input-contact"
+          type="text"
+          id="phone"
+          nanme="phone"
+          placeholder="+12345678"
+        />
+
+        <label for="Sujet" class="label-contact">Sujet:</label>
+        <select class="select-contact" name="Subject">
+          <option selected>Selectionner l'objet de la demande</option>
+          <option value="devis">Devis</option>
+          <option value="questions">Questions</option>
+          <option value="Autre">Autre</option>
+        </select>
+
+        <label for="message" class="label-contact"> Message :</label>
+        <textarea
+          class="message-contact"
+          placeholder="Merci de renseigner vos questions ou commentaires"
+          id="message"
+          cols="20"
+          rows="10"
+          name="message"
+        ></textarea>
+        
+        <label class="label-contact">
+          <input type="checkbox" /> En cochant cette case, j'accepte de recevoir
+          des informations sur les différentes offres disponibles.
+        </label>
+
+        <button class="button-contact" type="Submit" value="Envoyer">
+          Envoyer
+        </button>
+      </div>
+      <script src="scriptContact.js"></script>
+    </form>
+  </body>
+</html>
